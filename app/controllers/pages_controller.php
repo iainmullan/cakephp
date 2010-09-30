@@ -61,6 +61,7 @@ class PagesController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 
+
 	function view($id) {
 		$cond = array();
 		if (is_numeric($id)) {
@@ -70,8 +71,8 @@ class PagesController extends AppController {
 		}
 
 		$this->Page->contain('Child', 'Parent');
-		$this->set('page', $this->Page->find('first', array('conditions'=>$cond)));
-
+		$page = $this->Page->find('first', array('conditions'=>$cond));
+		$this->set('page', $page);
 	}
 
 }
