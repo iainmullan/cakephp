@@ -27,14 +27,20 @@
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
+
+		echo $this->Html->css('blueprint/src/reset');
+		echo $this->Html->css('blueprint/src/typography');
+		echo $this->Html->css('blueprint/src/grid');
+
 		echo $this->Html->css('app');
 		echo $scripts_for_layout;
 	?>
 	<?php echo $this->element('google/analytics'); ?>
 </head>
 <body>
-	<div id="container">
+	<div id="container" class="container">
 		<div id="header">
+			
 			<h1><?php echo $this->Html->link(__('New Site', true), 'http://www.ebotunes.com'); ?></h1>
 		</div>
 		<div id="content">

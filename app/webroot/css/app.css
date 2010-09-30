@@ -1,0 +1,20 @@
+
+#header {
+	border-bottom: 1px solid #ccc;
+}
+
+#footer {
+	text-align:right;
+	margin-top: 50px;
+	border-top: 1px solid #ccc;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #777;
+}
+#footer a {
+	color: #777;
+}
+#footer ul li {
+	display: inline;
+	margin-left: 10px;
+}
