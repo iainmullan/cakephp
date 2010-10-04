@@ -18,3 +18,7 @@
 	display: inline;
 	margin-left: 10px;
 }
+
+div#current-user {
+	text-align: right;
+}

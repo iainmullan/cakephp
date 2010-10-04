@@ -2,6 +2,10 @@
 class PagesController extends AppController {
 
 	var $name = 'Pages';
+	
+	function admin_home() {
+		
+	}
 
 	function admin_index() {
 		$this->Page->recursive = 0;
@@ -74,6 +78,8 @@ class PagesController extends AppController {
 		$page = $this->Page->find('first', array('conditions'=>$cond));
 		$this->set('page', $page);
 	}
+	
+	
 
 }
 ?>

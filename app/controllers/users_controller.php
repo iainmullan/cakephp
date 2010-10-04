@@ -42,8 +42,6 @@ class UsersController extends AppController {
 
 	}
 
-
-
 	function forgot() {
 
 		if (!empty($this->data)) {
@@ -58,8 +56,6 @@ class UsersController extends AppController {
 		}
 
 	}
-
-
 
 }
 ?>

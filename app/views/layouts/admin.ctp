@@ -22,38 +22,41 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php __('CakePHP: the rapid development php framework:'); ?>
-		<?php echo $title_for_layout; ?>
+		<?php echo $title_for_layout; ?> - 
+		<?php echo Configure::read('Site.name'); ?> Admin
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('blueprint/src/reset');
+		echo $this->Html->css('blueprint/src/grid');
+		echo $this->Html->css('blueprint/src/forms');
+		echo $this->Html->css('blueprint/src/typography');
+		echo $this->Html->css('blueprint/src/ie');
+
+		echo $this->Html->css('admin');
 
 		echo $scripts_for_layout;
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link(__('CakePHP: the rapid development php framework', true), 'http://cakephp.org'); ?></h1>
+    <div id="header">
+		<h1><?php echo Configure::read('Site.name'); ?> Admin 
+			<span class="back">[<?php echo $this->Html->link('Back to main site', Router::url('/')); ?>]</span></h1>
+	</div>
+	<div id="content" class="container span-24">
+		<div id="sidebar" class="span-4">
+			<?php echo $this->element('menus/admin'); ?>
 		</div>
-		<div id="content">
-
+		<div id="main" class="span-20 last">
 			<?php echo $this->Session->flash(); ?>
-
 			<?php echo $content_for_layout; ?>
-
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt'=> __('CakePHP: the rapid development php framework', true), 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<div class="clear"></div>
+	<div id="footer"></div>
+    <?php
+    echo $this->element('sql_dump');
+    ?>
 </body>
 </html>

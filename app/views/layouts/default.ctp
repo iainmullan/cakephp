@@ -40,9 +40,9 @@
 </head>
 <body>
 	<div id="container" class="container">
-		<div id="header">
-			
-			<h1><?php echo $this->Html->link(__('New Site', true), Router::url('/')); ?></h1>
+		<div id="header" class="container">
+			<h1 class="span-18"><?php echo $this->Html->link(__('New Site', true), Router::url('/')); ?></h1>
+			<div class="span-6 last"><?php echo $this->element('current_user'); ?></div>
 		</div>
 		<div id="content">
 

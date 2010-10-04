@@ -10,7 +10,7 @@
 
 		echo $form->submit('Login');
 
-		?><p class="quiet">or <?php echo $html->link('Sign up', array('controller'=>'users', 'action'=>'register')); ?></p><?php
+		?><p class="quiet">or <?php echo $html->link('Register', array('controller'=>'users', 'action'=>'register')); ?></p><?php
 
 		echo $form->end();
 
