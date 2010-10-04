@@ -22,8 +22,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php __('New Site'); ?>
-		<?php echo $title_for_layout; ?>
+		<?php echo $title_for_layout; ?> - <?php __('New Site'); ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -33,15 +32,17 @@
 		echo $this->Html->css('blueprint/src/grid');
 
 		echo $this->Html->css('app');
+
 		echo $scripts_for_layout;
+
+		echo $this->element('google/analytics');
 	?>
-	<?php echo $this->element('google/analytics'); ?>
 </head>
 <body>
 	<div id="container" class="container">
 		<div id="header">
 			
-			<h1><?php echo $this->Html->link(__('New Site', true), 'http://www.ebotunes.com'); ?></h1>
+			<h1><?php echo $this->Html->link(__('New Site', true), Router::url('/')); ?></h1>
 		</div>
 		<div id="content">
 
@@ -51,8 +52,8 @@
 
 		</div>
 		<div id="footer">
-			<span id="credit">an
-			<?php echo $this->Html->link(
+			<span id="credit">an <?php
+				echo $this->Html->link(
 					'ebotunes',
 					'http://www.ebotunes.com/',
 					array('target' => '_blank', 'escape' => false)
