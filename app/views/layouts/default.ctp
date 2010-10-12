@@ -41,8 +41,8 @@
 <body>
 	<div id="container" class="container">
 		<div id="header" class="container">
-			<h1 class="span-18"><?php echo $this->Html->link(__('New Site', true), Router::url('/')); ?></h1>
-			<div class="span-6 last"><?php echo $this->element('current_user'); ?></div>
+			<h1 class="span-16"><?php echo $this->Html->link(__('New Site', true), Router::url('/')); ?></h1>
+			<div class="span-8 last"><?php echo $this->element('current_user'); ?></div>
 		</div>
 		<div id="content">
 
