@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="4271"
+   name=""
+   committed-date="2010-10-15T16:52:06.079174Z"
+   url="svn+ssh://www2/svn/angus/trunk/vendors/ruckusing/config"
+   last-author="imullan"
+   kind="dir"
+   uuid="dbf0eedd-356f-0410-81d4-bfa3287d7c6a"
+   prop-time="2010-10-18T08:54:07.000000Z"
+   revision="4274"/>
+<entry
+   committed-rev="4239"
+   name="config.inc.php"
+   text-time="2010-10-13T13:16:26.000000Z"
+   committed-date="2010-10-13T13:17:43.206344Z"
+   checksum="90886982e242d4cd351b0073c7b0b9aa"
+   last-author="imullan"
+   kind="file"/>
+</wc-entries>

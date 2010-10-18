@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="4239"
+   name=""
+   committed-date="2010-10-13T13:17:43.206344Z"
+   url="svn+ssh://www2/svn/angus/trunk/vendors/ruckusing/lib/classes"
+   last-author="imullan"
+   kind="dir"
+   revision="4274"/>
+<entry
+   committed-rev="4239"
+   name="class.Ruckusing_BaseAdapter.php"
+   text-time="2010-10-13T13:16:26.000000Z"
+   committed-date="2010-10-13T13:17:43.206344Z"
+   checksum="5e05038c4466e8a16292a485de34f64e"
+   last-author="imullan"
+   kind="file"/>
+<entry
+   committed-rev="4239"
+   name="Ruckusing_exceptions.php"
+   text-time="2010-10-13T13:16:26.000000Z"
+   committed-date="2010-10-13T13:17:43.206344Z"
+   checksum="e22dd4142c9b9fdd0967cec1a53404dd"
+   last-author="imullan"
+   kind="file"/>
+<entry
+   name="task"
+   kind="dir"/>
+<entry
+   name="adapters"
+   kind="dir"/>
+<entry
+   committed-rev="4239"
+   name="class.Ruckusing_TableDefinition.php"
+   text-time="2010-10-13T13:16:26.000000Z"
+   committed-date="2010-10-13T13:17:43.206344Z"
+   checksum="640cd3aa37913e709767ccce366d079d"
+   last-author="imullan"
+   kind="file"/>
+<entry
+   committed-rev="4239"
+   name="class.Ruckusing_BaseMigration.php"
+   text-time="2010-10-13T13:16:26.000000Z"
+   committed-date="2010-10-13T13:17:43.206344Z"
+   checksum="04497e075069c0566c157a52e22c58a7"
+   last-author="imullan"
+   kind="file"/>
+<entry
+   committed-rev="4239"
+   name="class.Ruckusing_FrameworkRunner.php"
+   text-time="2010-10-13T13:16:26.000000Z"
+   committed-date="2010-10-13T13:17:43.206344Z"
+   checksum="489b5e2a76403122e132c27795081be4"
+   last-author="imullan"
+   kind="file"/>
+<entry
+   committed-rev="4239"
+   name="class.Ruckusing_iAdapter.php"
+   text-time="2010-10-13T13:16:26.000000Z"
+   committed-date="2010-10-13T13:17:43.206344Z"
+   checksum="c5f3dd0a5c81602da2326de325a93671"
+   last-author="imullan"
+   kind="file"/>
+<entry
+   name="util"
+   kind="dir"/>
+</wc-entries>
