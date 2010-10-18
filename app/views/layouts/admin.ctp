@@ -32,7 +32,9 @@
 		echo $this->Html->css('blueprint/src/grid');
 		echo $this->Html->css('blueprint/src/forms');
 		echo $this->Html->css('blueprint/src/typography');
-		echo $this->Html->css('blueprint/src/ie');
+		<!--[if IE]>
+		<?php echo $this->Html->css('blueprint/src/ie'); ?>
+		<![endif]-->
 
 		echo $this->Html->css('admin');
 
@@ -40,21 +42,23 @@
 	?>
 </head>
 <body>
-    <div id="header">
-		<h1><?php echo Configure::read('Site.name'); ?> Admin 
-			<span class="back">[<?php echo $this->Html->link('Back to main site', Router::url('/')); ?>]</span></h1>
-	</div>
-	<div id="content" class="container span-24">
-		<div id="sidebar" class="span-4">
-			<?php echo $this->element('menus/admin'); ?>
+	<div class="wrapper">
+	    <div id="header">
+			<h1><?php echo Configure::read('Site.name'); ?> Admin 
+				<span class="back">[<?php echo $this->Html->link('Back to main site', Router::url('/')); ?>]</span></h1>
 		</div>
-		<div id="main" class="span-20 last">
-			<?php echo $this->Session->flash(); ?>
-			<?php echo $content_for_layout; ?>
+		<div id="content" class="container span-24">
+			<div id="sidebar" class="span-4">
+				<?php echo $this->element('menus/admin'); ?>
+			</div>
+			<div id="main" class="span-20 last">
+				<?php echo $this->Session->flash(); ?>
+				<?php echo $content_for_layout; ?>
+			</div>
 		</div>
+		<div class="push"></div>
 	</div>
-	<div class="clear"></div>
-	<div id="footer"></div>
+	<div id="footer" class="footer"><?php echo Configure::read('Site.name'); ?></div>
     <?php
     echo $this->element('sql_dump');
     ?>
