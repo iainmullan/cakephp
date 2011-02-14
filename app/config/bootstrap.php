@@ -50,3 +50,6 @@
  */
 
 include('app.php');
+
+// This file should be created separately in each different deplyment environment, and contain environment-specific configuration
+include('local.php');
