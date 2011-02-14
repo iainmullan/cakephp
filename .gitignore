@@ -4,3 +4,4 @@
 /vendors/ruckusing/logs/*.log
 /vendors/ruckusing/config/database.inc.php.default
 /app/config/local.php
+/app/config/database.php
