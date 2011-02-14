@@ -30,9 +30,6 @@
 		echo $this->Html->css('blueprint/src/reset');
 		echo $this->Html->css('blueprint/src/typography');
 		echo $this->Html->css('blueprint/src/grid');
-		<!--[if IE]>
-		<?php echo $this->Html->css('blueprint/src/ie'); ?>
-		<![endif]-->
 
 		echo $this->Html->css('app');
 
