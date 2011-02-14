@@ -20,7 +20,7 @@ if(!defined('RUCKUSING_DB_DIR')) {
 
 //Where the actual migrations reside
 if(!defined('RUCKUSING_MIGRATION_DIR')) {
-	define('RUCKUSING_MIGRATION_DIR', RUCKUSING_BASE . '/../../app/config/migrate');
+	define('RUCKUSING_MIGRATION_DIR', RUCKUSING_BASE . '/../../config/migrate');
 }
 
 //Where the log files reside

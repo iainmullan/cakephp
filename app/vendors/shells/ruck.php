@@ -36,7 +36,7 @@ class RuckShell extends Shell {
 	
 	function __construct($args) {
 		parent::__construct($args);
-		$this->baseDir = ROOT."/vendors/ruckusing/";
+		$this->baseDir = APP."/vendors/ruckusing/";
 		echo $this->baseDir;
 	}
 
